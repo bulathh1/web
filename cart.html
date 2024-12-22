@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Корзина</title>
+    <link rel="stylesheet" href="cartstyle.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="header_nav">
+                <ul class="header_list">
+                    <li><a class="active" href="#!">ЧАСЫ</a></li>
+                    <li><a href="#!">УКРАШЕНИЯ</a></li>
+                    <li><a href="#!">КОМИССИОННЫЙ ОТД</a></li>
+                    <li><a href="#!">СЕРВИС И РЕМОНТ</a></li>
+                </ul>
+                <ul class="header_list_2">
+                    <li>
+                        <img src="/image/Moscow.svg" alt="Moscow" class="Moscow">
+                        <a href="#!">МОСКВА</a>
+                    </li>
+                    <li>
+                        <img src="/image/vhod.svg" alt="Moscow" class="Moscow">
+                        <a href="#!">ВХОД</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="red-line"></div>
+        <div class="container">
+            <div class="header_nav2">
+                <ul class="nav">
+                    <div class="dot1"></div>
+                    <li class ="name-board">Интернет-Магазин</li>
+                    <li><a class ="number" href="#!">8 800 600-79-64</a></li>
+                    <li><a class ="number" href="#!">8 999 859-40-96</a></li>
+                    <div class="dot1"></div>
+                </ul>
+                
+                <ul class="nav">
+                    <li class ="name-board" >Сервисный Центр</li>
+                    <li><a class ="number" href="#!">8 499 257-54-54</a></li>
+                    <div class="dot1"></div>
+                </ul>
+                <ul class="maintext">
+                    <li><a class="consul" href="/index.html">КОНСУЛ</a></li>
+                    <li><a class="swiss_watches" href="/index.html">ШВЕЦАРСКИЕ ЧАСЫ</a></li>
+                </ul>
+                <ul class="search">
+                    <input type="search_box" placeholder="Поиск по всем часам" />
+                </ul>
+            </div>
+        </div>
+        <div class="rectangle">     
+            <div class="adaptive">
+                <div class="ddd">   
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+                <div class="pl">
+                    <img class="srch" src="/image/search22.png" alt="srch">
+                </div>
+            </div>
+            <div class="container">
+                <div class="navigator">
+                    <ul class="navigator_list">
+                        <li><a href="/catalog.html">НОВЫЕ ЧАСЫ</a></li>
+                        <li><a href="#!">SALE</a></li>
+                        <li><a href="#!">УКРАШЕНИЯ</a></li>
+                        <li><a href="#!">БРЕНДЫ</a></li>
+                        <li><a href="#!">АКСЕССУАРЫ</a></li>
+                        <li><a href="/catalog.html">МАГАЗИН</a></li>
+                        <li><a href="#!">КОМИССИОННЫЕ ЧАСЫ</a></li>
+                        <li><a href="/cart.html">КОРЗИНА</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <form method="post" name="cart" id="cart_form" class="order">
+            <div id="path" class="path">
+                <a href="/index.html" class="path_link">Главная</a> / Корзина
+            </div>
+            <h2 class="title2">В корзине 1 товар</h2>
+            <article class="cart_table">
+                <table id="purchases" class="order_table">
+                    <div class="line"></div>
+                    <tbody class="watchtable">
+                        <tr class="tableitems">
+                            <td class="orderitem">
+                                <a href="/product.html"><img  class="mainicon" src="/image/1watches.png" alt="Товар" title=""></a>
+                            </td>
+                            <td  class="name" >
+                                <a  href="/product.html">Часы Frederique Constant Highlife FC-310SAL4NH2B</a>
+                            </td>
+                            <td class="price">
+                                <div class="order_item_cost">383 000 P.</div>
+                            </td>
+                            <td class="amount" style="width:3rem">
+                                <div class="count">
+                                    <input type="number" name="amount" value="1" style="width:100%">
+                                </div>
+                            </td>
+                            <td>
+                                <div class="allcost">383 000 P.</div>
+                            </td>
+                            <td class="remove">
+                                <a href="#!"><img  class="deletebtn" src="/image/delete.svg" alt="delete" title=""></a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="line"></div>
+        
+                <div class="cart_total">
+                    <div class="sumcost">Итого 383 000 P.</div>
+                </div>
+            </article>
+        
+            <div class="form cart_form">
+                <div class="p_line">
+                    <label class="phone">Телефон <sup>*</sup></label>
+                </div>
+                <div class="cont">
+                    <input id="phone" name="phone" type="tel" required>
+                </div>
+        
+                <h3>Адрес получения:</h3>
+                <div class="p_line">
+                    <label for="city">Город / регион</label>
+                </div>
+                <div class="cont">
+                    <select id="city" name="city">
+                        <option value="">-- Выберите город --</option>
+                        <option value="1">Москва</option>
+                        <option value="2">Санкт-Петербург</option>
+                        <option value="-1">Другой</option>
+                    </select>
+                </div>
+        
+                <h3>Контактные данные</h3>
+                <div class="p_line">
+                    <label class="name">Имя, Фамилия <sup>*</sup></label>
+                </div>
+                <div class="cont">
+                    <input id="name" name="name" type="text" required>
+                </div>
+                <div class="p_line">
+                    <label class="email">Электронная почта <sup>*</sup></label>
+                </div>
+                <div class="cont">
+                    <input id="email" name="email" type="email" required>
+                </div>
+                <div class="p_line">
+                    <label class="coupon">Промокод</label>
+                </div>
+                <div class="cont">
+                    <input id="coupon" name="coupon_code" type="text">
+                    <button class="button">Применить</button>
+                </div>
+                <div class="p_line">
+                    <label class="comment">Комментарий к заказу</label>
+                </div>
+                <div class="cont">
+                    <textarea id="comment" name="comment"></textarea>
+                </div>
+            </div>
+        
+            <div class="oform">
+                Нажимая кнопку "Оформить заказ", Вы принимаете условия
+                <a class="path_link" href="#!">Публичной оферты</a> и <a class="path_link"  href="#!">Персональных данных</a>
+            </div>
+        
+            <div class="cartform">
+                <input type="checkbox" name="data_processing" id="data_processing" required>
+                <label for="data_processing">Разрешите обработку данных <sup>*</sup></label>
+            </div>
+        
+            <div class="checkout">
+                <button class="checkoutbutton">Оформить Заказ</button>
+            </div>
+        </form>
+    </div>
+    <footer class="footer">
+        <upfooter class="upperfooter">
+            <div class="container">
+                <div class="subscribeselection">
+                    <div class="info">Подпишитесь чтобы получать информацию о новинках и скидках:</div>
+                    <input type="mail" placeholder="Введите ваш email" />
+                    <div class="subscribe">Подписаться</div>
+                </div>
+            </div>
+        </upfooter>
+        <div class="mainfooter">
+            <div class="container">
+                <div class="columns">
+                    <ul class="column"> 
+                        <li class="head">Интернет-магазин</li>
+                        <li class="mainnumber">8 800 600-79-64</li>
+                        <li class="head">Обратная связь,</li>
+                        <li class="head1">благодарности и жалобы</li>
+                        <li class="infotext">info@consul-watches.ru</li>
+                        <li class="head">Ремонт и сервис</li>
+                        <li class="infotext">servicecenter@consul-watches.ru</li>
+                        <li class="head">Комиссионный отдел</li>
+                        <li class="infotext">commission@consul-watches.ru</li>
+                    </ul>
+                    <ul class="column">
+                        <li class="head">Консул</li>
+                        <li><a class="infotext1" href="#!">О компании</a></li>
+                        <li><a class="infotext1" href="#!">Магазины</a></li>
+                        <li><a class="infotext1" href="#!">Ремонт и сервис часов</a></li>
+                        <li><a class="infotext1" href="#!">Публичная оферта</a></li>
+                        <li><a class="infotext1" href="#!">Персональные данные</a></li>
+                        <li><a class="infotext1" href="#!">Акции / Блоги / Новости</a></li>
+                        <li><a class="infotext1" href="#!">Партнёры</a></li>
+                        <li><a class="infotext1" href="#!">Карта сайта</a></li>
+                    </ul>
+                    <ul class="column1">
+                        <li class="head">Как мы работаем</li>
+                        <li><a class="infotext1" href="#!">Как сделать заказ/предзаказ</a></li>
+                        <li><a class="infotext1" href="#!">Оплата при получении</a></li>
+                        <li><a class="infotext1" href="#!">Кредитная карта</a></li>
+                        <li><a class="infotext1" href="#!">Доставка</a></li>
+                        <li><a class="infotext1" href="#!">Самовывоз из магазинов</a></li>
+                        <li><a class="infotext1" href="#!">Возврат и обмен</a></li>
+                        <li><a class="infotext1" href="#!">Гарантия и сервис</a></li>
+                    </ul>
+                    <ul class="column2">
+                        <li class="head">Способы оплаты</li>
+                        <li class="icons">
+                            <a href="#!"><img src="/image/1i.svg" alt="1icon" class="icon"></a>
+                            <a href="#!"><img src="/image/2i.svg" alt="2icon" class="icon"></a>
+                            <a href="#!"><img src="/image/3i.svg" alt="3icon" class="icon"></a>
+                            <a href="#!"><img src="/image/4i.svg" alt="4icon" class="icon"></a>
+                        </li>
+                        <li class="infotext">Вы можете оплатить покупки наличными при получении,</li>
+                        <li class="infotext">либо выбрать другой метод оплаты.</li>
+                        <li class="head">Способы доставки</li>
+                        <li class="icons">
+                            <a href="#!"><img src="/image/5i.svg" alt="5icon" class="icon"></a>
+                            <a href="#!"><img src="/image/6i.svg" alt="6icon" class="icon"></a>
+                            <a href="#!"><img src="/image/7i.svg" alt="7icon" class="icon"></a>
+                        </li>
+                        <li class="infotext">Вы можете заказать доставку курьерской службой CONSUL</li>
+                        <li class="infotext">или транспортной компанией, либо забрать часы из магазина</li>
+                        <li class="infotext">КОНСУЛ в Вашем городе</li>
+                    </ul>
+                    <ul class="phone">
+                        <li class="infotext">Мобильная версия</li>
+                        <img src="/image/phone.svg" alt="7icon" class="icon">
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="bottomfooter">
+            <div class="container">
+                <div class="bottom">Все права защищены © 2001—2024 КОНСУЛ</div>
+                <div class="bottom">Сайт может содержать контент, не предназначенный для лиц младше 16-ти лет.</div>
+                <div class="bottom">ООО «Компания «Консул»</div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

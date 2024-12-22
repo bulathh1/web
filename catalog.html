@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>catalog</title>
+    <link rel="stylesheet" href="catalogstyle.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="header_nav">
+                <ul class="header_list">
+                    <li><a class="active" href="#!">ЧАСЫ</a></li>
+                    <li><a href="#!">УКРАШЕНИЯ</a></li>
+                    <li><a href="#!">КОМИССИОННЫЙ ОТД</a></li>
+                    <li><a href="#!">СЕРВИС И РЕМОНТ</a></li>
+                </ul>
+                <ul class="header_list_2">
+                    <li>
+                        <img src="/image/Moscow.svg" alt="Moscow" class="Moscow">
+                        <a href="#!">МОСКВА</a>
+                    </li>
+                    <li>
+                        <img src="/image/vhod.svg" alt="Moscow" class="Moscow">
+                        <a href="#!">ВХОД</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="red-line"></div>
+        <div class="container">
+            <div class="header_nav2">
+                <ul class="nav">
+                    <div class="dot1"></div>
+                    <li class ="name-board">Интернет-Магазин</li>
+                    <li><a class ="number" href="#!">8 800 600-79-64</a></li>
+                    <li><a class ="number" href="#!">8 999 859-40-96</a></li>
+                    <div class="dot1"></div>
+                </ul>
+                
+                <ul class="nav">
+                    <li class ="name-board" >Сервисный Центр</li>
+                    <li><a class ="number" href="#!">8 499 257-54-54</a></li>
+                    <div class="dot1"></div>
+                </ul>
+                <ul class="maintext">
+                    <li><a class="consul" href="/index.html">КОНСУЛ</a></li>
+                    <li><a class="swiss_watches" href="/index.html">ШВЕЦАРСКИЕ ЧАСЫ</a></li>
+                </ul>
+                <ul class="search">
+                    <input type="search_box" placeholder="Поиск по всем часам" />
+                </ul>
+            </div>
+        </div>
+        <div class="rectangle">     
+            <div class="adaptive">
+                <div class="ddd">   
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+                <div class="pl">
+                    <img class="srch" src="/image/search22.png" alt="srch">
+                </div>
+            </div>
+            <div class="container">
+                <div class="navigator">
+                    <ul class="navigator_list">
+                        <li><a href="/catalog.html">НОВЫЕ ЧАСЫ</a></li>
+                        <li><a href="#!">SALE</a></li>
+                        <li><a href="#!">УКРАШЕНИЯ</a></li>
+                        <li><a href="#!">БРЕНДЫ</a></li>
+                        <li><a href="#!">АКСЕССУАРЫ</a></li>
+                        <li><a href="/catalog.html">МАГАЗИН</a></li>
+                        <li><a href="#!">КОМИССИОННЫЕ ЧАСЫ</a></li>
+                        <li><a href="/cart.html">КОРЗИНА</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="maincatalog">
+        <div class="container">
+            <div class="fullcatalog">
+                <div class="container">
+                    <div class="filter">
+                        <div class="price_name">Цена</div>
+                        <div class="price">
+                            <input type="pricenumber" id="price_from" name="price_from" value="0">
+                            <label for="price_to">до</label>
+                            <input type="pricenumber" id="price_to" name="price_to" value="1000000">
+                        </div>
+                        <div class="line"></div>
+                        <ul class="filter_of">Для кого
+                            <li>
+                                <input id="for1" type="checkbox">
+                                <label for="for1">Для него</label>
+                            </li>
+                            <li>
+                                <input id="for1" type="checkbox">
+                                <label for="for1">Для неё</label>
+                            </li>
+                            <li>
+                                <input id="for1" type="checkbox">
+                                <label for="for1">Для детей</label>
+                            </li>
+                        </ul>
+                        <div class="line"></div>
+                        <ul class="filter_of">Бренд
+                            <li>
+                                <input id="brand1" type="checkbox">
+                                <label for="brand1">Rolex</label>
+                            </li>
+                            <li>
+                                <input id="brand2" type="checkbox">
+                                <label for="brand2">G-SHOCK</label>
+                            </li>
+                            <li>
+                                <input id="brand3" type="checkbox">
+                                <label for="brand3">Adriatica</label>
+                            </li>
+                            <li>
+                                <input id="brand4" type="checkbox">
+                                <label for="brand4">Casio</label>
+                            </li>
+                            <li>
+                                <input id="brand5" type="checkbox">
+                                <label for="brand5">Grovanna</label>
+                            </li>
+                        </ul>
+                        <div class="line"></div>
+                        <ul class="filter_of">Материал корпуса
+                            <li>
+                                <input id="material1" type="checkbox">
+                                <label for="material1">Сталь</label>
+                            </li>
+                            <li>
+                                <input id="material2" type="checkbox">
+                                <label for="material2">Пластик</label>
+                            </li>
+                            <li>
+                                <input id="material3" type="checkbox">
+                                <label for="material3">Титан</label>
+                            </li>
+                            <li>
+                                <input id="material4" type="checkbox">
+                                <label for="material4">Золото</label>
+                            </li>
+                            <li>
+                                <input id="material5" type="checkbox">
+                                <label for="material5">Керамика</label>
+                            </li>
+                        </ul>
+                        <div class="line"></div>
+                        <ul class="filter_of">Материал ремешка
+                            <li>
+                                <input id="material1" type="checkbox">
+                                <label for="material1">Сталь</label>
+                            </li>
+                            <li>
+                                <input id="material2" type="checkbox">
+                                <label for="material2">Кожа</label>
+                            </li>
+                            <li>
+                                <input id="material3" type="checkbox">
+                                <label for="material3">Каучук</label>
+                            </li>
+                            <li>
+                                <input id="material4" type="checkbox">
+                                <label for="material4">Силикон</label>
+                            </li>
+                        <div class="line"></div>
+                        <ul class="filter_of">Страна-производитель
+                                <li>
+                                    <input id="country1" type="checkbox">
+                                    <label for="country1">Италия</label>
+                                </li>
+                                <li>
+                                    <input id="country2" type="checkbox">
+                                    <label for="country2">Германия</label>
+                                </li>
+                                <li>
+                                    <input id="country3" type="checkbox">
+                                    <label for="country3">Япония</label>
+                                </li>
+                                <li>
+                                    <input id="country4" type="checkbox">
+                                    <label for="country4">Америка</label>
+                                </li>
+                                <li>
+                                    <input id="country5" type="checkbox">
+                                    <label for="country5">Италия</label>
+                                </li>
+                        </ul>
+                        <div class="line"></div>
+                        <div class="show">Показать</div>
+                        </ul>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="catalog_of">
+                        <div id="path" class="path">
+                            <a href="/index.html" class="path_link">Главная</a>
+                            
+                        / <a class="path_link" href="catalog/watch">Наручные часы</a>
+                        
+                        </div>
+
+                        <header class="hgroup catalog_p">
+                            <h1 class="title2">Наручные часы</h1>
+                        
+                        <form method="get" id="features" class="tags" action="/catalog/watch">
+                        <input type="hidden" value="6" name="category_id">
+                        <div class="filter_link">
+
+                        <div class="sort">
+                            <span class="sort_text">Сортировать</span>
+                                <a href="#!" class="sort_link"><span class="sort_link_in">По названию</span></a>
+                                <a href="#!" class="sort_link"><span class="sort_link_in">По цене</span></a>
+                                <a href="#!" class="sort_link active"><span class="sort_link_in">По умолчанию</span></a>
+                            </form>
+                            </div>
+                        </div>
+                        <div class="pages">
+                            <a class="active" href="#!">1</a>
+                            <a href="#!">2</a>
+                            <a href="#!">3</a>
+                            <a href="#!">4</a>
+                            <a href="#!">5</a>
+                            <a href="#!">6</a>
+                            <a href="#!">7</a>
+                            <a href="#!">8</a>
+                            <a href="#!">...</a>
+                            <a href="#!">375</a>
+                            <a class="next_page" href="#!">Вперед</a></div>
+                        </div>
+        
+                        <div class="watches">
+                            <div class="selectedwatch">
+                                <a href="/product.html"><img src="/image/1watches.png" alt="1watch" class="watch"></a>
+                                <h1 class="availability">в наличии</h1>
+                                <h2 class="title">Часы Breitling Navitimer 32</h2>
+                                <h3 class="price">540 000 Р.</h3>
+                                <div class="overlay"></div>
+                                <div class="button"><a href="/cart.html">Купить</a></div>
+                            </div>
+                            <div class="selectedwatch">
+                                <a href="/product.html"><img src="/image/2watches.png" alt="1watch" class="watch"></a>
+                                <h1 class="availability">в наличии</h1>
+                                <h2 class="title">Часы TAG Heuer Aquaracer</h2>
+                                <h3 class="price">356 000 Р.</h3>
+                                <div class="overlay"></div>
+                                <div class="button"><a href="/cart.html">Купить</a></div>
+                            </div>
+                            <div class="selectedwatch">
+                                <a href="/product.html"><img src="/image/3watches.png" alt="1watch" class="watch"></a>
+                                <h1 class="availability">в наличии</h1>
+                                <h2 class="title">Часы Omega Seamaster</h2>
+                                <h3 class="price">650 000 Р.</h3>
+                                <div class="overlay"></div>
+                                <div class="button"><a href="/cart.html">Купить</a></div>
+                            </div>
+                            <div class="selectedwatch">
+                                <a href="/product.html"><img src="/image/1watches.png" alt="1watch" class="watch"></a>
+                                <h1 class="availability">в наличии</h1>
+                                <h2 class="title">Часы Breitling Navitimer 32</h2>
+                                <h3 class="price">540 000 Р.</h3>
+                                <div class="overlay"></div>
+                                <div class="button"><a href="/cart.html">Купить</a></div>
+                            </div>
+                            <div class="selectedwatch">
+                                <a href="/product.html"><img src="/image/2watches.png" alt="1watch" class="watch"></a>
+                                <h1 class="availability">в наличии</h1>
+                                <h2 class="title">Часы TAG Heuer Aquaracer</h2>
+                                <h3 class="price">356 000 Р.</h3>
+                                <div class="overlay"></div>
+                                <div class="button"><a href="/cart.html">Купить</a></div>
+                            </div>
+                            <div class="selectedwatch">
+                                <a href="/product.html"><img src="/image/3watches.png" alt="1watch" class="watch"></a>
+                                <h1 class="availability">в наличии</h1>
+                                <h2 class="title">Часы Omega Seamaster</h2>
+                                <h3 class="price">650 000 Р.</h3>
+                                <div class="overlay"></div>
+                                <div class="button"><a href="/cart.html">Купить</a></div>
+                            </div>
+                            <div class="selectedwatch">
+                                <a href="/product.html"><img src="/image/1watches.png" alt="1watch" class="watch"></a>
+                                <h1 class="availability">в наличии</h1>
+                                <h2 class="title">Часы Breitling Navitimer 32</h2>
+                                <h3 class="price">540 000 Р.</h3>
+                                <div class="overlay"></div>
+                                <div class="button"><a href="/cart.html">Купить</a></div>
+                            </div>
+                            <div class="selectedwatch">
+                                <a href="/product.html"><img src="/image/2watches.png" alt="1watch" class="watch"></a>
+                                <h1 class="availability">в наличии</h1>
+                                <h2 class="title">Часы TAG Heuer Aquaracer</h2>
+                                <h3 class="price">356 000 Р.</h3>
+                                <div class="overlay"></div>
+                                <div class="button"><a href="/cart.html">Купить</a></div>
+                            </div>
+                            <div class="selectedwatch">
+                                <a href="/product.html"><img src="/image/3watches.png" alt="1watch" class="watch"></a>
+                                <h1 class="availability">в наличии</h1>
+                                <h2 class="title">Часы Omega Seamaster</h2>
+                                <h3 class="price">650 000 Р.</h3>
+                                <div class="overlay"></div>
+                                <div class="button"><a href="/cart.html">Купить</a></div>
+                            </div>
+                            <div class="selectedwatch">
+                                <a href="/product.html"><img src="/image/1watches.png" alt="1watch" class="watch"></a>
+                                <h1 class="availability">в наличии</h1>
+                                <h2 class="title">Часы Breitling Navitimer 32</h2>
+                                <h3 class="price">540 000 Р.</h3>
+                                <div class="overlay"></div>
+                                <div class="button"><a href="/cart.html">Купить</a></div>
+                            </div>
+                            <div class="selectedwatch">
+                                <a href="/product.html"><img src="/image/2watches.png" alt="1watch" class="watch"></a>
+                                <h1 class="availability">в наличии</h1>
+                                <h2 class="title">Часы TAG Heuer Aquaracer</h2>
+                                <h3 class="price">356 000 Р.</h3>
+                                <div class="overlay"></div>
+                                <div class="button"><a href="/cart.html">Купить</a></div>
+                            </div>
+                            <div class="selectedwatch">
+                                <a href="/product.html"><img src="/image/3watches.png" alt="1watch" class="watch"></a>
+                                <h1 class="availability">в наличии</h1>
+                                <h2 class="title">Часы Omega Seamaster</h2>
+                                <h3 class="price">650 000 Р.</h3>
+                                <div class="overlay"></div>
+                                <div class="button"><a href="/cart.html">Купить</a></div>
+                            </div>
+                            <div class="pages">
+                                <a class="active" href="#!">1</a>
+                                <a href="#!">2</a>
+                                <a href="#!">3</a>
+                                <a href="#!">4</a>
+                                <a href="#!">5</a>
+                                <a href="#!">6</a>
+                                <a href="#!">7</a>
+                                <a href="#!">8</a>
+                                <a href="#!">...</a>
+                                <a href="#!">375</a>
+                                <a class="next_page" href="#!">Вперед</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>          
+    </div>
+    </form>  
+    </header>
+
+
+    <footer class="footer">
+        <upfooter class="upperfooter">
+            <div class="container">
+                <div class="subscribeselection">
+                    <div class="info">Подпишитесь чтобы получать информацию о новинках и скидках:</div>
+                    <input type="mail" placeholder="Введите ваш email" />
+                    <div class="subscribe">Подписаться</div>
+                </div>
+            </div>
+        </upfooter>
+        <div class="mainfooter">
+            <div class="container">
+                <div class="columns">
+                    <ul class="column"> 
+                        <li class="head">Интернет-магазин</li>
+                        <li class="mainnumber">8 800 600-79-64</li>
+                        <li class="head">Обратная связь,</li>
+                        <li class="head1">благодарности и жалобы</li>
+                        <li class="infotext">info@consul-watches.ru</li>
+                        <li class="head">Ремонт и сервис</li>
+                        <li class="infotext">servicecenter@consul-watches.ru</li>
+                        <li class="head">Комиссионный отдел</li>
+                        <li class="infotext">commission@consul-watches.ru</li>
+                    </ul>
+                    <ul class="column">
+                        <li class="head">Консул</li>
+                        <li><a class="infotext1" href="#!">О компании</a></li>
+                        <li><a class="infotext1" href="#!">Магазины</a></li>
+                        <li><a class="infotext1" href="#!">Ремонт и сервис часов</a></li>
+                        <li><a class="infotext1" href="#!">Публичная оферта</a></li>
+                        <li><a class="infotext1" href="#!">Персональные данные</a></li>
+                        <li><a class="infotext1" href="#!">Акции / Блоги / Новости</a></li>
+                        <li><a class="infotext1" href="#!">Партнёры</a></li>
+                        <li><a class="infotext1" href="#!">Карта сайта</a></li>
+                    </ul>
+                    <ul class="column1">
+                        <li class="head">Как мы работаем</li>
+                        <li><a class="infotext1" href="#!">Как сделать заказ/предзаказ</a></li>
+                        <li><a class="infotext1" href="#!">Оплата при получении</a></li>
+                        <li><a class="infotext1" href="#!">Кредитная карта</a></li>
+                        <li><a class="infotext1" href="#!">Доставка</a></li>
+                        <li><a class="infotext1" href="#!">Самовывоз из магазинов</a></li>
+                        <li><a class="infotext1" href="#!">Возврат и обмен</a></li>
+                        <li><a class="infotext1" href="#!">Гарантия и сервис</a></li>
+                    </ul>
+                    <ul class="column2">
+                        <li class="head">Способы оплаты</li>
+                        <li class="icons">
+                            <a href="#!"><img src="/image/1i.svg" alt="1icon" class="icon"></a>
+                            <a href="#!"><img src="/image/2i.svg" alt="2icon" class="icon"></a>
+                            <a href="#!"><img src="/image/3i.svg" alt="3icon" class="icon"></a>
+                            <a href="#!"><img src="/image/4i.svg" alt="4icon" class="icon"></a>
+                        </li>
+                        <li class="infotext">Вы можете оплатить покупки наличными при получении,</li>
+                        <li class="infotext">либо выбрать другой метод оплаты.</li>
+                        <li class="head">Способы доставки</li>
+                        <li class="icons">
+                            <a href="#!"><img src="/image/5i.svg" alt="5icon" class="icon"></a>
+                            <a href="#!"><img src="/image/6i.svg" alt="6icon" class="icon"></a>
+                            <a href="#!"><img src="/image/7i.svg" alt="7icon" class="icon"></a>
+                        </li>
+                        <li class="infotext">Вы можете заказать доставку курьерской службой CONSUL</li>
+                        <li class="infotext">или транспортной компанией, либо забрать часы из магазина</li>
+                        <li class="infotext">КОНСУЛ в Вашем городе</li>
+                    </ul>
+                    <ul class="phone">
+                        <li class="infotext">Мобильная версия</li>
+                        <img src="/image/phone.svg" alt="7icon" class="icon">
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="bottomfooter">
+            <div class="container">
+                <div class="bottom">Все права защищены © 2001—2024 КОНСУЛ</div>
+                <div class="bottom">Сайт может содержать контент, не предназначенный для лиц младше 16-ти лет.</div>
+                <div class="bottom">ООО «Компания «Консул»</div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
